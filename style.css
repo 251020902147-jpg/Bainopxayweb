@@ -1,0 +1,100 @@
+/* --- THIẾT LẬP CHUNG --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4; /* Màu nền xanh lá rất nhạt */
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+h1 {
+    color: #27ae60;
+}
+
+/* --- YÊU CẦU 1: LIÊN KẾT SKIP TO MAIN CONTENT (:focus và position) --- */
+.skip-link {
+    position: absolute;
+    top: -50px; 
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px; 
+}
+
+/* --- YÊU CẦU 2 & 7: THANH ĐIỀU HƯỚNG DÙNG FLEXBOX --- */
+.navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #27ae60; /* Xanh lá mạ */
+    padding: 20px;
+}
+
+.navbar a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #27ae60;
+}
+
+/* --- YÊU CẦU 6: CSS GRID (TỐI THIỂU 2 CỘT) --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.single-image {
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- YÊU CẦU 5: BOX MODEL CHO MỌI HÌNH ẢNH (border, padding, border-radius) --- */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 4px solid #bdc3c7; 
+    padding: 8px; 
+    border-radius: 12px; 
+    background-color: #ffffff;
+    box-sizing: border-box;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* --- YÊU CẦU 8: HIỆU ỨNG KHI DI CHUỘT (HOVER) --- */
+img:hover {
+    transform: scale(1.03);
+    border-color: #27ae60;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* --- YÊU CẦU 9: SỬ DỤNG BỘ CHỌN NTH-CHILD --- */
+/* Đổi kiểu dáng cho các ảnh nằm ở vị trí chẵn trong Grid để tạo sự phá cách */
+.grid-container img:nth-child(even) {
+    border-radius: 40px 10px 40px 10px; /* Bo góc chéo đặc biệt */
+    border-style: double; /* Viền nét đôi */
+    border-width: 6px;
+}
