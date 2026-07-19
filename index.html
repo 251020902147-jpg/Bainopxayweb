@@ -1,0 +1,25 @@
+<!-- HTML đã sửa để dùng sự kiện CLICK -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thư viện ảnh tương tác (Dùng Click)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khu vực hiển thị ảnh lớn -->
+    <div id="image">
+        Bấm vào một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <!-- Các ảnh nhỏ: Thay onmouseover bằng onclick, XÓA onmouseout -->
+    <img class="preview" alt="Mèo con dễ thương" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=200" onclick="upDate(this)">
+    
+    <img class="preview" alt="Chó con dạo phố" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=200" onclick="upDate(this)">
+    
+    <img class="preview" alt="Phong cảnh núi non" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=200" onclick="upDate(this)">
+
+    <script src="scrip.js"></script>
+</body>
+</html>
