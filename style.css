@@ -1,39 +1,65 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Trắng y hệt ví dụ */
     margin: 0;
     padding: 20px;
 }
 
+h1 {
+    font-size: 200%;
+}
+
+/* === ĐỊNH DẠNG KHUNG ẢNH LỚN VÀ VĂN BẢN === */
 #image {
-    width: 400px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     border: 5px solid black;
     margin: 20px auto;
-    background-color: #8e68ff;
+    background-color: #8e68ff; /* Tím y hệt ví dụ */
     background-size: cover;
     background-position: center;
-    color: white;
-    font-size: 150%;
+    
+    /* Các thuộc tính flexbox để đặt văn bản vào giữa */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    position: relative; /* Giúp định vị span */
+    
+    /* Hiệu ứng mờ dần khi đổi ảnh */
+    transition: 0.3s;
+}
+
+.image-text {
+    color: white;
+    font-size: 25px; /* Giảm cỡ chữ một chút để vừa */
+    font-weight: bold;
     text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Giúp padding không làm phình span */
+    position: absolute; /* Giúp span nằm giữa div con */
+    
+    /* Hiệu ứng bóng chữ để chữ dễ đọc trên nền ảnh */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* === ĐỊNH DẠNG 6 ẢNH NHỎ === */
+#gallery {
+    margin-top: 50px;
 }
 
 .preview {
     width: 150px;
     height: 150px;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Thêm hiệu ứng khi di chuột hoặc tab vào ảnh */
+/* Thêm hiệu ứng khi di chuột hoặc tab vào ảnh nhỏ */
 .preview:focus, .preview:hover {
-    border-color: #ff0000;
+    border: 5px solid #ff0000;
     transform: scale(1.05);
 }

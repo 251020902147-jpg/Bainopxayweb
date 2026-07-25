@@ -4,44 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thư viện ảnh có thể truy cập</title>
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link đến file CSS. Kiểm tra kỹ đường dẫn này! -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Thư viện ảnh của tôi</h1>
     
-    <!-- Đây là phần hiển thị ảnh lớn khi di chuột hoặc dùng phím tab -->
+    <!-- === BẮT ĐẦU: KHUNG ẢNH LỚN === -->
     <div id="image">
-        Di chuột qua hoặc dùng phím Tab chọn một hình ảnh bên dưới để hiển thị tại đây.
+        <!-- Chú ý: Dấu <span> giúp chúng ta định vị văn bản ở giữa khung ảnh -->
+        <span class="image-text">
+            Di chuột qua hoặc dùng phím Tab để xem ảnh to.
+        </span>
     </div>
+    <!-- === KẾT THÚC: KHUNG ẢNH LỚN === -->
 
-    <!-- 6 hình ảnh của bạn -->
+    <!-- === BẮT ĐẦU: 6 ẢNH NHỎ === -->
     <div id="gallery">
-    <img class="preview" alt="Mô tả ảnh 1: Dãy núi" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
+        <!-- Ảnh 1: Báo gấm -->
+        <img class="preview" alt="Báo gấm trong rừng" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
 
-    <img class="preview" alt="Mô tả ảnh 2: Bãi biển" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
+        <!-- Ảnh 2: Mèo đen trắng -->
+        <img class="preview" alt="Mèo trên bãi biển" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
 
-    <img class="preview" alt="Mô tả ảnh 3: Rừng cây" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
+        <!-- Ảnh 3: Gấu -->
+        <img class="preview" alt="Gấu trong rừng" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
 
-    <img class="preview" alt="Mô tả ảnh 4: Thành phố" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
+        <!-- Ảnh 4: Chó -->
+        <img class="preview" alt="Thành phố và chó cưng" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
 
-    <img class="preview" alt="Mô tả ảnh 5: Động vật" src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
+        <!-- Ảnh 5: Voi -->
+        <img class="preview" alt="Đàn voi trên thảo nguyên" src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
 
-    <img class="preview" alt="Mô tả ảnh 6: Không gian" src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=150&h=150&fit=crop" 
-         onmouseover="upDate(this)" onfocus="upDate(this)" 
-         onmouseleave="unDo()" onblur="unDo()">
-</div>
+        <!-- Ảnh 6: Không gian -->
+        <img class="preview" alt="Vũ trụ và tinh vân" src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=150&h=150&fit=crop" 
+             onmouseover="upDate(this)" onfocus="upDate(this)" 
+             onmouseleave="unDo()" onblur="unDo()">
+    </div>
+    <!-- === KẾT THÚC: 6 ẢNH NHỎ === -->
 
-    <script src="js/gallery.js"></script>
+    <!-- Link đến file JavaScript. Kiểm tra kỹ đường dẫn này! -->
+    <script src="gallery.js"></script>
 </body>
 </html>
