@@ -1,61 +1,92 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thư viện ảnh có thể truy cập</title>
-    
-    <!-- Link đến file CSS. Kiểm tra kỹ đường dẫn này! -->
+    <title>Web Lỏ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Thư viện ảnh của tôi</h1>
-    
-    <!-- === BẮT ĐẦU: KHUNG ẢNH LỚN === -->
-    <div id="image">
-        <!-- Chú ý: Dấu <span> giúp chúng ta định vị văn bản ở giữa khung ảnh -->
-        <span class="image-text">
-            Di chuột qua hoặc dùng phím Tab để xem ảnh to.
-        </span>
+    <div>
+        <h1>NEWS</h1>
+        <ul class="menu">
+            <li><a href="#">Xã Hội</a></li>
+            <li><a href="#">Kinh Doanh</a></li>
+            <li><a href="#">Quốc Tế</a></li>
+            <li><a href="#">Quân Sự</a></li>
+        </ul>
     </div>
-    <!-- === KẾT THÚC: KHUNG ẢNH LỚN === -->
 
-    <!-- === BẮT ĐẦU: 6 ẢNH NHỎ === -->
-    <div id="gallery">
-        <!-- Ảnh 1: Báo gấm -->
-        <img class="preview" alt="Báo gấm trong rừng" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
+   
+    <div class="box">
+       
+        <div class="box-1">
+            <a href="#"><img src="huychuong.webp" alt="Van Dong Vien Huy Chuong Vang"></a>
+            <p>12:54 PM</p>
+            <h2>Giành 7 Huy Chương Vàng Châu Á Ánh Viên Nhận Được Giải Thưởng Bao Nhiêu?</h2>
+            <p>(VTC NEWS)-Giành 7 Huy Chương Vàng Châu Lục Ánh Viên Nhận Được Số Tiền Không Nhỏ Từ Liên Đoàn Thể Thao Và Đơn Vị Chủ Quản Quân Đội</p>
+         
+        </div>
 
-        <!-- Ảnh 2: Mèo đen trắng -->
-        <img class="preview" alt="Mèo trên bãi biển" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
-
-        <!-- Ảnh 3: Gấu -->
-        <img class="preview" alt="Gấu trong rừng" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
-
-        <!-- Ảnh 4: Chó -->
-        <img class="preview" alt="Thành phố và chó cưng" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
-
-        <!-- Ảnh 5: Voi -->
-        <img class="preview" alt="Đàn voi trên thảo nguyên" src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
-
-        <!-- Ảnh 6: Không gian -->
-        <img class="preview" alt="Vũ trụ và tinh vân" src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=150&h=150&fit=crop" 
-             onmouseover="upDate(this)" onfocus="upDate(this)" 
-             onmouseleave="unDo()" onblur="unDo()">
+       
+        <div class="box-2">
+   
+    <div class="item-small">
+        <a href="#"><img src="nguoitinh.jpg" alt="Người Tình"></a>
+        <div class="text-content">
+            <p>Người Tình Tuổi TEEN Xinh Đẹp</p>
+        </div>
     </div>
-    <!-- === KẾT THÚC: 6 ẢNH NHỎ === -->
 
-    <!-- Link đến file JavaScript. Kiểm tra kỹ đường dẫn này! -->
-    <script src="gallery.js"></script>
+   
+    <div class="item-small">
+        <a href="#"><img src="shawbeo.webp" alt="Luke Shaw"></a>
+        <div class="text-content">
+            <p>Luke Shaw Bất Ngờ Tập Luyện</p>
+        </div>
+    </div>
+
+   
+    <div class="item-small">
+        <a href="#"><img src="lethuyhai.jpeg" alt="Lê Thụy Hải"></a>
+        <div class="text-content">
+            <p>Lê Thụy Hải</p>
+        </div>
+    </div>
+</div>
+        <div class="box-3">
+            <h2>Thăm Dò</h2>
+            <div class="inbox3">
+            <p>Bạn Thích Nghỉ Tết 7 Ngày Hay 10 Ngày?</p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="mainbox">
+    <div class="mainbox1">
+        <div class="mainboxOne">
+  <div class="mainbox12">
+ <a href="#"><img src="dienthoai.jpeg" alt="dienthoai"></a>
+  </div>
+  <div class="mainbox123">
+ <p>06/10/2015</p> 
+ <h2>1 IPHONE 6S Bị Vỡ 5 Thanh Niên Nhận Là 'Chủ Nhân'</h2>
+  </div>
+        </div>
+  <div class="mainbox13">
+<div class="134">
+<a href="#"><img src="muop.webp" alt="muop"></a>
+</div>
+<div class="135">
+<p>06/10/2015</p>
+<h2>Tác Hại Của Ăn Mướp</h2>
+</div>
+  </div>
+    </div>
+    <div class="mainbox2">
+
+    </div>
+    </div>
 </body>
 </html>
