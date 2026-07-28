@@ -1,92 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Lỏ</title>
+    <title>Layout Báo Chí</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>NEWS</h1>
-        <ul class="menu">
-            <li><a href="#">Xã Hội</a></li>
-            <li><a href="#">Kinh Doanh</a></li>
-            <li><a href="#">Quốc Tế</a></li>
-            <li><a href="#">Quân Sự</a></li>
+
+<div class="news-container">
+    
+    <header class="category-header">
+        <h2>Khoa học – Công nghệ</h2>
+        <ul class="sub-menu">
+            <li><a href="#" class="active">Khoa học</a></li>
+            <li><a href="#">Việt Nam</a></li>
+            <li><a href="#">Phát minh</a></li>
+            <li><a href="#">Ứng dụng</a></li>
+            <li><a href="#">Thế giới tự nhiên</a></li>
+            <li><a href="#">AI4VN 2023</a></li>
         </ul>
-    </div>
+    </header>
 
    
-    <div class="box">
-       
-        <div class="box-1">
-            <a href="#"><img src="huychuong.webp" alt="Van Dong Vien Huy Chuong Vang"></a>
-            <p>12:54 PM</p>
-            <h2>Giành 7 Huy Chương Vàng Châu Á Ánh Viên Nhận Được Giải Thưởng Bao Nhiêu?</h2>
-            <p>(VTC NEWS)-Giành 7 Huy Chương Vàng Châu Lục Ánh Viên Nhận Được Số Tiền Không Nhỏ Từ Liên Đoàn Thể Thao Và Đơn Vị Chủ Quản Quân Đội</p>
-         
+    <div class="news-grid">
+        
+        
+        <div class="col col-main">
+            <article>
+                <a href="#" class="img-link">
+                    <img src="robot.jpg" alt="Robot Mặt Trăng">
+                </a>
+                <h3 class="title-main"><a href="#">Robot Ấn Độ phát hiện nhiều nguyên tố ở cực nam Mặt Trăng</a></h3>
+                <p class="description">Robot tự hành xác nhận sự tồn tại của lưu huỳnh và nhiều nguyên tố khác gần cực nam Mặt Trăng trong lúc tìm kiếm băng nước gần một tuần sau cú hạ cánh lịch sử.</p>
+            </article>
         </div>
 
-       
-        <div class="box-2">
-   
-    <div class="item-small">
-        <a href="#"><img src="nguoitinh.jpg" alt="Người Tình"></a>
-        <div class="text-content">
-            <p>Người Tình Tuổi TEEN Xinh Đẹp</p>
+        <div class="col col-sub">
+            <article class="article-sub border-bottom">
+                <a href="#" class="img-link">
+                    <img src="xedien.jpg" alt="Xe điện">
+                </a>
+                <h4 class="title-sub"><a href="#">Tiến sĩ Việt chế tạo xe điện có gắn thùng lạnh</a></h4>
+            </article>
+            <article class="article-sub">
+                <a href="#" class="img-link">
+                    <img src="hangdong.jpg" alt="Hang động">
+                </a>
+                <h4 class="title-sub"><a href="#">Con người có thể sống dưới lòng đất hay không?</a></h4>
+            </article>
         </div>
-    </div>
 
-   
-    <div class="item-small">
-        <a href="#"><img src="shawbeo.webp" alt="Luke Shaw"></a>
-        <div class="text-content">
-            <p>Luke Shaw Bất Ngờ Tập Luyện</p>
+        
+        <div class="col col-list">
+            <article class="list-item border-bottom">
+                <h4 class="title-list"><a href="#">Khu vườn có thể chứa bạch tuộc dưới đáy biển</a></h4>
+                <a href="#" class="img-link">
+                    <img src="robot.jpg" alt="Bạch tuộc">
+                </a>
+            </article>
+            <article class="list-item border-bottom">
+                <h4 class="title-list"><a href="#">Robot tự động săn giết sao biển</a></h4>
+                <a href="#" class="img-link">
+                    <img src="robotbachtuoc.jpg" alt="Robot sao biển">
+                </a>
+            </article>
+            <article class="list-item border-bottom">
+                <h4 class="title-list"><a href="#">Đề xuất nghiên cứu sâu về tai biến lở đất Tây Nguyên và ĐBSCL</a></h4>
+                <a href="#" class="img-link">
+                    <img src="hop.jpg" alt="Lở đất">
+                </a>
+            </article>
+            <article class="list-item">
+                <h4 class="title-list"><a href="#">Nấm mồ hạt nhân ám ảnh quần đảo Marshall suốt 77 năm</a></h4>
+                <a href="#" class="img-link">
+                    <img src="hatnhan.jpg" alt="Nấm mồ hạt nhân">
+                </a>
+            </article>
         </div>
-    </div>
 
-   
-    <div class="item-small">
-        <a href="#"><img src="lethuyhai.jpeg" alt="Lê Thụy Hải"></a>
-        <div class="text-content">
-            <p>Lê Thụy Hải</p>
-        </div>
     </div>
 </div>
-        <div class="box-3">
-            <h2>Thăm Dò</h2>
-            <div class="inbox3">
-            <p>Bạn Thích Nghỉ Tết 7 Ngày Hay 10 Ngày?</p>
 
-            </div>
-        </div>
-
-    </div>
-    <div class="mainbox">
-    <div class="mainbox1">
-        <div class="mainboxOne">
-  <div class="mainbox12">
- <a href="#"><img src="dienthoai.jpeg" alt="dienthoai"></a>
-  </div>
-  <div class="mainbox123">
- <p>06/10/2015</p> 
- <h2>1 IPHONE 6S Bị Vỡ 5 Thanh Niên Nhận Là 'Chủ Nhân'</h2>
-  </div>
-        </div>
-  <div class="mainbox13">
-<div class="134">
-<a href="#"><img src="muop.webp" alt="muop"></a>
-</div>
-<div class="135">
-<p>06/10/2015</p>
-<h2>Tác Hại Của Ăn Mướp</h2>
-</div>
-  </div>
-    </div>
-    <div class="mainbox2">
-
-    </div>
-    </div>
 </body>
 </html>
