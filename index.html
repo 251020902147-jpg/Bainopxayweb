@@ -1,86 +1,58 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Báo Chí</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    div {
+      width: 100%;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (min-width: 772px) {
+      div {
+        width: 45vw;
+        display: inline-block;
+      }
+
+      img {
+        max-height: 30vh;
+        width: auto;
+      }
+    }
+
+    @media screen and (min-width: 998px) {
+      div {
+        width: 30vw;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="news-container">
-    
-    <header class="category-header">
-        <h2>Khoa học – Công nghệ</h2>
-        <ul class="sub-menu">
-            <li><a href="#" class="active">Khoa học</a></li>
-            <li><a href="#">Việt Nam</a></li>
-            <li><a href="#">Phát minh</a></li>
-            <li><a href="#">Ứng dụng</a></li>
-            <li><a href="#">Thế giới tự nhiên</a></li>
-            <li><a href="#">AI4VN 2023</a></li>
-        </ul>
-    </header>
-
-   
-    <div class="news-grid">
-        
-        
-        <div class="col col-main">
-            <article>
-                <a href="#" class="img-link">
-                    <img src="robot.jpg" alt="Robot Mặt Trăng">
-                </a>
-                <h3 class="title-main"><a href="#">Robot Ấn Độ phát hiện nhiều nguyên tố ở cực nam Mặt Trăng</a></h3>
-                <p class="description">Robot tự hành xác nhận sự tồn tại của lưu huỳnh và nhiều nguyên tố khác gần cực nam Mặt Trăng trong lúc tìm kiếm băng nước gần một tuần sau cú hạ cánh lịch sử.</p>
-            </article>
-        </div>
-
-        <div class="col col-sub">
-            <article class="article-sub border-bottom">
-                <a href="#" class="img-link">
-                    <img src="xedien.jpg" alt="Xe điện">
-                </a>
-                <h4 class="title-sub"><a href="#">Tiến sĩ Việt chế tạo xe điện có gắn thùng lạnh</a></h4>
-            </article>
-            <article class="article-sub">
-                <a href="#" class="img-link">
-                    <img src="hangdong.jpg" alt="Hang động">
-                </a>
-                <h4 class="title-sub"><a href="#">Con người có thể sống dưới lòng đất hay không?</a></h4>
-            </article>
-        </div>
-
-        
-        <div class="col col-list">
-            <article class="list-item border-bottom">
-                <h4 class="title-list"><a href="#">Khu vườn có thể chứa bạch tuộc dưới đáy biển</a></h4>
-                <a href="#" class="img-link">
-                    <img src="robot.jpg" alt="Bạch tuộc">
-                </a>
-            </article>
-            <article class="list-item border-bottom">
-                <h4 class="title-list"><a href="#">Robot tự động săn giết sao biển</a></h4>
-                <a href="#" class="img-link">
-                    <img src="robotbachtuoc.jpg" alt="Robot sao biển">
-                </a>
-            </article>
-            <article class="list-item border-bottom">
-                <h4 class="title-list"><a href="#">Đề xuất nghiên cứu sâu về tai biến lở đất Tây Nguyên và ĐBSCL</a></h4>
-                <a href="#" class="img-link">
-                    <img src="hop.jpg" alt="Lở đất">
-                </a>
-            </article>
-            <article class="list-item">
-                <h4 class="title-list"><a href="#">Nấm mồ hạt nhân ám ảnh quần đảo Marshall suốt 77 năm</a></h4>
-                <a href="#" class="img-link">
-                    <img src="hatnhan.jpg" alt="Nấm mồ hạt nhân">
-                </a>
-            </article>
-        </div>
-
-    </div>
-</div>
+  <div>
+    <img src="https://via.placeholder.com/400" alt="Hinh 1">
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/400" alt="Hinh 2">
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/400" alt="Hinh 3">
+  </div>
 
 </body>
 </html>
