@@ -1,166 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Danh Mục Đầu Tư | Tên Của Bạn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box-max">
-        <div class="box-header">
-            <img src="anh1.png" alt="ảnh logo">
-            <div class="box-header1">
-                <h4>TRENDING</h4>
-                <div class="box-header-mini">
-                    <a href="#"><h5><span>#</span>THE FACE VIETNAM 2017</h5></a>
-                    <a href="#"><h5><span>#</span>SPECIAL</h5></a>
+    <!-- Tính năng bổ sung 1: Thanh điều hướng cố định (Sticky Header) -->
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h1>Xin chào, tôi là [Tên Của Bạn]</h1>
+            <p>Tôi là một nhà phát triển web đam mê tạo ra các trải nghiệm người dùng tuyệt vời.</p>
+        </section>
+
+        <!-- Tính năng bổ sung 2: Bố cục dạng lưới (CSS Grid) cho danh sách dự án -->
+        <section id="projects" class="section">
+            <h2>Dự án của tôi</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Dự án 1</h3>
+                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
+                    <a href="#" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="project-card">
+                    <h3>Dự án 2</h3>
+                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
+                    <a href="#" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="project-card">
+                    <h3>Dự án 3</h3>
+                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
+                    <a href="#" class="btn">Xem chi tiết</a>
                 </div>
             </div>
-    </div>
-        <div class="box-menu">
-            <a href="#">
-                <h4>THẾ GIỚI SAO</h4>
-            </a>
-            <a href="#">
-                <h4>TV-SHOW</h4>
-            </a>
-            <a href="#">
-                <h4>THỜI TRANG</h4>
-            </a>
-        </div>
-        <div class="box-max-mini">
-          <div class="box-1">
-            <div class="box-1-left"> 
-            <a href="#"><img src="anh2.png" alt="ảnh đường"></a>
-            <p><span class="food">FOOD</span> -2 Tuần Trước</p>
-            <a href="#">
-                <p>Provided By Associal Newspapers Limidted A Tory MP Revealed work began on Wednesdays night to turn the M26 into a 'parking lot'.File PhotoA...</p>
-            </a>
-            </div>
-            <div class="box-1-mid"> 
-            <a href="#"><img src="anh3.png" alt="ảnh đường"></a>
-            <p><span class="food">FOOD</span> -4 Tháng Trước</p>
-            <a href="#">
-                <p>Các Loại Thuốc Giảm Cân Thông Thường Giành Cho Những Người Béo Phì,Thừa Cân Hiện Nay Chưa Tìm Được Biện Pháp Tối Ưu Hầu Hết Những Loại Sản...</p>
-            </a>
-            </div>
-            <div class="box-1-right"> 
-            <a href="#"><img src="anh4.png" alt="ảnh đường"></a>
-            <p><span class="food">FOOD</span> -9 Tháng Trước</p>
-            <a href="#">
-                <p>Nhiều Người Không Thích Mứt Dừa Già Cứng Nhưng Lại Rất Khoái Khẩu Món Mứt Dừa No.Sao Tết Nay Mẹ Không Thử Học Cách Làm Mứt Dừa Non 3 Vị...</p>
-            </a>
-            </div>
-          </div>
-          <div class="box-2">
-            <div class="box-2-left">
-                <div class="box-2-left-top">
-                    <div class="box-2-left-top-left">
-                    <a href="#"><img src="anh5.png" alt="Anh đường"></a>
-                    <a href="#">
-                        <h3>M26 will be closed every night for six weeks so it can be turned into giant lorry park if Britain levers EU without a deal</h3>
-                    </a>
-              <p>Provided By Associal Newspapers Limidted A Tory MP Revealed work began on Wednesdays night to turn the M26 into a 'parking lot'.File Photo A major motorways in the South East will be closed every nig...</p>      
-                    </div>
-                    <div class="box-2-left-top-right">
-      <div class="box-2-left-top-right1">
-        <a href="#" class="boxx2"><img src="anh6.png" alt="Sua Giam Can"></a>
-        <a href="#"><h4>Giảm Cân KiMaito Nhật Bản </h4></a>
-      </div>
-      <div class="box-2-left-top-right1">
-        <a href="#" class="=boxx2"><img src="anh7.png" alt="sữa dừa non"></a>
-        <a href="#"><h4>Cách Làm Mứt Dừa Non Vị Sữa,Trà Chanh,CaoCao Không Bị Mủn Nát Lại Dẻo Thơm</h4></a>
-      </div>
-      <div class="box-ul">
-      <ul>
-        <a href="#"><li><span>Nhà Hàng Kinh Dị Nổi Tiếng Với Món Thạch Sùng Tẩm Bột,Bọ Rán Hay Caramel Sâu</span></li></a>
-      </ul>
-      <ul>
-        <a href="#"><li><span>Mềm Mịn Thơm Món Mousse Đào</span></li></a>
-      </ul>
-      </div>
-                    </div>
-                </div>
-                <div class="box-2-left-bottom">
-                    <div class="box-2-left-bottom1">
-                        <a href="#"><img src="anh8.png" alt="muffin"></a>
-                        <div class="box-2-left-bottom-text1">
-                            <a href="#">
-                                <h3>Cuối Tuần Làm Món muffin Thanh Long Lạ Miệng Ngon Không Ngờ Tới</h3>
-                                </a>
-                                <p><span class="food">FOOD</span> -1 Năm Trước</p>
-                                <p>Bánh Thanh Long Muffin Với Màu Sắc Bắt Mắt Vị Ngon Lạ Miệng Khiến Ai Thử Lần Đầu Cũng Mê.Nguyên Liệu-3 Qu...</p>
-                            
-                        </div>
-                    </div>
-                    <div class="box-2-left-bottom2">
-                        <a href="#"><img src="anh9.png" alt="muffin"></a>
-                        <div class="box-2-left-bottom-text1">
-                            <a href="#">
-                                <h3>Mỗi Ngày Người Nhật Hay Uống 1 Ly Này,Đó Chính Là Bí Quyết Trẻ,Khỏe,Sống Lâu Của Họ</h3>
-                                </a>
-                                <p><span class="food">FOOD</span> -1 Năm Trước</p>
-                                <p>Đến Nay Người Dân Vùng Okiwa,Nhật Bản Vẫn Duy Trì Thói Quen Uống Ly Nước Này Suốt Nhiều Thập Kỉ Qua ...</p>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="box-2-next">
-                        <a href="#">
-                            <p>1</p>
-                        </a>  
-                        <a href="#">
-                            <p>2</p>
-                        </a>  
-                        <a href="#">
-                            <p>3</p>
-                        </a>  
-                        <a href="#">
-                            <p>...</p>
-                        </a>  
-                        <a href="#">
-                            <p>6</p>
-                        </a>  
-                        <a href="#">
-                            <p> tiếp theo >></p>
-                        </a>  
-                    </div>
-            </div>
-            <div class="box-2-right">
-                <a href="#"><img src="anh10.png" alt="Tiếng Anh"></a>
-                <a href="#"><img src="anh11.png" alt="Quang Cao"></a>
-            </div>
-          </div>
-          
-        </div>
-        <div class="box-footer">
-            <div class="box-footer-left">
-                <ul>
-                    <li><span>Tổng Biên Tập</span>: Nhà Báo Nguyễn Thảo Lan</li>
-                </ul>
-                <ul>
-                    <li><span>Phó Tổng Biên Tập</span> :Lâm Văn Huynh - Tô Hạo - Nguyễn Bánh</li>
-                </ul>
-                <ul>
-                    <li><span>Giám Đốc Điều Hành</span> :Hà Huy Minh</li>
-                </ul>
-                <ul>
-                    <li><span>Giấy Phép Số</span> :13/GP-BTTTT Bộ Thông Tin & Truyền Thông Cấp Ngày 11/05/2018</li>
-                </ul>
-            </div>  
-            <div class="box-footer-mid">
-                <h3>Hợp Tác Quảng Cáo</h3>
-                <a href="#">
-                    <p>Báo Gái Quảng Cáo</p>
-                </a>
-            </div>  
-            <div class="box-footer-right">
-                <h3>Trụ Sở Hà Nội </h3>
-                <p>Tầng 1, Tòa Nhà Time Line,Số 3 Trần Hưng Đạo, Hà Nội</p>
-            </div>
-        </div>
-    </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Liên hệ với tôi</h2>
+            <p>Email: emailcuaban@example.com</p>
+            <p>LinkedIn: linkedin.com/in/ten-cua-ban</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Tên Của Bạn]. Đã đăng ký bản quyền.</p>
+    </footer>
 </body>
 </html>
