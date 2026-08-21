@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh Mục Đầu Tư | Tên Của Bạn</title>
+    <!-- Thêm font chữ hiện đại từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Tính năng bổ sung 1: Thanh điều hướng cố định (Sticky Header) -->
-    <header class="sticky-header">
+
+    <!-- Thanh điều hướng hiệu ứng kính mờ (Glassmorphism) -->
+    <header class="navbar">
         <nav>
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Portfolio<span>.</span></div>
             <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#projects">Dự án</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
@@ -19,43 +23,90 @@
         </nav>
     </header>
 
-    <main>
-        <section id="about" class="section">
-            <h1>Xin chào, tôi là [Tên Của Bạn]</h1>
-            <p>Tôi là một nhà phát triển web đam mê tạo ra các trải nghiệm người dùng tuyệt vời.</p>
-        </section>
+    <!-- Phần Hero (Trang chủ đầu tiên) -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Xin chào, tôi là</p>
+            <h1 class="gradient-text">Nguyễn Văn A</h1>
+            <p class="role">Lập Trình Viên Front-end & Thiết Kế Web</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Xem Dự Án</a>
+                <a href="#contact" class="btn btn-secondary">Liên Hệ Ngay</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Tính năng bổ sung 2: Bố cục dạng lưới (CSS Grid) cho danh sách dự án -->
-        <section id="projects" class="section">
-            <h2>Dự án của tôi</h2>
+    <!-- Phần Giới thiệu -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <div class="about-content">
+                <p>Tôi là một nhà phát triển web đam mê sáng tạo những giao diện đẹp mắt và tối ưu trải nghiệm người dùng. Với sự tận tâm và kỹ năng lập trình HTML, CSS, JavaScript, tôi luôn muốn biến mọi ý tưởng thành hiện thực trên nền tảng số.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Dự án -->
+    <section id="projects" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Dự Án Nổi Bật</h2>
             <div class="project-grid">
+                <!-- Dự án 1 -->
                 <div class="project-card">
-                    <h3>Dự án 1</h3>
-                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
-                    <a href="#" class="btn">Xem chi tiết</a>
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-info">
+                        <h3>Trang Web Du Lịch</h3>
+                        <p>Website giới thiệu danh lam thắng cảnh với giao diện hiện đại và hình ảnh chất lượng cao.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Xem chi tiết</a>
+                    </div>
                 </div>
+
+                <!-- Dự án 2 -->
                 <div class="project-card">
-                    <h3>Dự án 2</h3>
-                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
-                    <a href="#" class="btn">Xem chi tiết</a>
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-info">
+                        <h3>Cửa Hàng Thương Mại Điện Tử</h3>
+                        <p>Giao diện cửa hàng bán lẻ trực tuyến, tối ưu hóa cho thiết bị di động (Responsive).</p>
+                        <div class="tech-stack">
+                            <span>Flexbox</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Xem chi tiết</a>
+                    </div>
                 </div>
+
+                <!-- Dự án 3 -->
                 <div class="project-card">
-                    <h3>Dự án 3</h3>
-                    <p>Mô tả ngắn gọn về dự án này và các công nghệ bạn đã sử dụng.</p>
-                    <a href="#" class="btn">Xem chi tiết</a>
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-info">
+                        <h3>Blog Cá Nhân</h3>
+                        <p>Thiết kế blog cá nhân với chế độ đọc tối (Dark mode) và hiệu ứng cuộn mượt mà.</p>
+                        <div class="tech-stack">
+                            <span>Responsive</span>
+                            <span>Animations</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Xem chi tiết</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Liên hệ với tôi</h2>
-            <p>Email: emailcuaban@example.com</p>
-            <p>LinkedIn: linkedin.com/in/ten-cua-ban</p>
-        </section>
-    </main>
+    <!-- Phần Liên hệ -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Sẵn Sàng Làm Việc Cùng Nhau?</h2>
+            <p>Hãy gửi cho tôi một email để trao đổi về dự án tiếp theo của bạn.</p>
+            <a href="mailto:emailcuaban@example.com" class="btn btn-primary" style="margin-top: 2rem;">Gửi Email Cho Tôi</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 [Tên Của Bạn]. Đã đăng ký bản quyền.</p>
+        <p>&copy; 2026 Tên Của Bạn. Thiết kế bằng ❤️ và Code.</p>
     </footer>
 </body>
 </html>
